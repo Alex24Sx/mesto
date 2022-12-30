@@ -1,0 +1,22 @@
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #000000;
+  color: #FFFFFF;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+   text-rendering: optimizeLegibility;
+
+}
+/*@media screen and (max-width: 1024px){
+  .page {
+    max-width: 1024px;
+  }
+}
+*/
+/*
+{
+	outline: 3px solid rgb(52, 69, 165);
+	}
+*/
