@@ -11,7 +11,9 @@
 
 /*---------elements---------------------*/
 @import url(../blocks/elements/elements.css);
-@import url(../blocks/elements/__item/elements__item.css);
+@import url(../blocks/elements/__element/elements__element.css);
+@import url(../blocks/elements/__rectangle/elements__rectangle.css);
+
 /*----------- -------------*/
 
 /*----------- -------------*/
