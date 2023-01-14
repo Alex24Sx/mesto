@@ -1,0 +1,12 @@
+.profile__info{
+  display: grid;
+  margin: 0;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+  "name edit-button"
+  "discription";
+  flex-grow: 1
+}
