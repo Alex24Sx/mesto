@@ -1,3 +1,7 @@
 .elements__rectangle{
   background-color:#ffffff;
+  height: 79px;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
 }

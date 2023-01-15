@@ -7,6 +7,7 @@
   column-gap: 17px;
   margin: 0 auto;
   justify-items: center;
+  padding-top: 47.5px;
 }
 /*@media screen and (max-width: 1270px){
   .photo-grid {

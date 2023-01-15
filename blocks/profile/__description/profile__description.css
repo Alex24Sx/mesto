@@ -1,3 +1,6 @@
 .profile__discription{
-  grid-area: discription;
+  margin: 0;
+  padding: 0;
 }
+/*
+grid-area: discription;*/
