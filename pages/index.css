@@ -23,14 +23,7 @@
 @import url(../blocks/elements/__item/elements__item.css);
 @import url(../blocks/elements/__rectangle/elements__rectangle.css);
 @import url(../blocks/elements/__card-name/elements__card-name.css);
-
-/*----------- -------------*/
-
-/*----------- -------------*/
-
-/*------------------cover ------------*/
-
+@import url(../blocks/elements/__icon/elements__icon.css);
 /*------------------footer-------------*/
 @import url(../blocks/footer/footer.css);
-
-
+@import url(../blocks/footer/__copyright/footer__copyright.css);

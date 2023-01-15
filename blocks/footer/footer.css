@@ -1,10 +1,13 @@
 .footer {
   position: relative;
   display: flex;
-  margin: 92px auto 0px auto;
-  max-width: 92.5%;
+  margin: 0 auto;
+  padding-top: 67px;
+  padding-bottom: 60px;
+  max-width: 880px;
   justify-content: space-between;
 }
+/*
 @media screen and (max-width: 768px){
   .footer {
     margin: 88px auto 0px auto;
@@ -20,4 +23,4 @@
   .footer {
     margin: 64px auto 0px auto;
   }
-}
+}*/
