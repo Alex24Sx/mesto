@@ -1,0 +1,12 @@
+.popup__close-icon{
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background-image: url(../../../images/images/Close\ Icon.svg);
+  width: 32px;
+  height: 32px;
+}
+.popup__close-icon:hover{
+  background-image: url(../../../images/images/Close\ Icon\ gray.svg);
+}
