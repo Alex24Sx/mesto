@@ -1,4 +1,9 @@
 .header__logo{
   width: 142px;
   height: 33px;
+  background-image: url(../../../images/images/Logo.svg);
+}
+.header__logo:hover{
+  background-image: url(../../../images/images/Logo-black.svg);
+  transition: 0.5ms;
 }

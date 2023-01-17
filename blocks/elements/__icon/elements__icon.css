@@ -3,4 +3,14 @@
   padding: 0;
   display: flex;
   align-items: flex-end;
+  width: 22px;
+  height: 19px;
+  background-image: url(../../../images/images/like.svg);
+}
+.elements__icon:hover{
+  background-image: url(../../../images/images/likehover.svg);
+  transition: 0.5ms;
+}
+.elements__icon:active{
+  background-image: url(../../../images/images/like-active.svg);
 }

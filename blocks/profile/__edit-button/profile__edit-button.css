@@ -1,7 +1,17 @@
 .profile__edit-button{
-  margin: 0;
+  margin: 6.5px 0 0 0;
   padding: 0;
   display: flex;
+  background-image: url(../../../images/images/Edit\ Button.svg);
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+
+}
+.profile__edit-button:hover{
+  background-color: black;
+  opacity: 0.6;
 }
 /* grid-area: edit-button;*/
 /*background-image: url(../../../images/images/Edit\ Button.svg);
