@@ -21,6 +21,6 @@ const jobInput = document.querySelector('.popup__input-text_type_discribe');
 
 function handleFormSubmit(evt) {
   evt.preventDefault();
-
+  nameInput
 }
 formElement.addEventListener('submit', handleFormSubmit);
