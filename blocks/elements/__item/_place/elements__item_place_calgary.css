@@ -1,0 +1,10 @@
+.elements__item_place_calgary {
+  background-image: url(../../../../images/images/calgary.jpg);
+  background-size: 282px 282px;
+  box-sizing: content-box;
+}
+@media screen and (max-width: 560px){
+  .elements__item_place_calgary {
+    background-image: url(../../../../images/images-small/calgary.jpg);
+  }
+}

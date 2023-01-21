@@ -1,0 +1,10 @@
+.elements__item_place_washington {
+  background-image: url(../../../../images/images/Washington\ DC.jpg);
+  background-size: cover;
+  object-fit: contain;
+}
+@media screen and (max-width: 560px){
+  .elements__item_place_washington {
+    background-image: url(../../../../images/images-small/Washington\ DC.jpg);
+  }
+}

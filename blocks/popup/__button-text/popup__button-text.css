@@ -1,4 +1,4 @@
-.popup__button-text{
+.popup__button-text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -9,4 +9,10 @@
   margin: 0;
   padding: 0;
   width: 100%;
+}
+@media screen and (max-width: 560px){
+  .popup__button-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

@@ -1,4 +1,4 @@
-.popup__button{
+.popup__button {
   display: flex;
   width: 358px;
   height: 50px;
@@ -12,7 +12,13 @@
   align-self:center;
   margin: 0px 36px 37px 36px;
 }
-.popup__button:hover{
+.popup__button:hover {
   background: #000000;
   opacity: 0.8;
+}
+@media screen and (max-width: 560px){
+  .popup__button {
+    width: 238px;
+    margin: 0px auto 25px auto;
+  }
 }

@@ -1,0 +1,10 @@
+.elements__item_place_monica {
+  background-image: url(../../../../images/images/santa\ monica.jpg);
+  background-size: 282px 282px;
+  box-sizing: content-box;
+}
+@media screen and (max-width: 560px){
+  .elements__item_place_monica {
+    background-image: url(../../../../images/images-small/santa\ monica.jpg);
+  }
+}

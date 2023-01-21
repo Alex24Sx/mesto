@@ -1,4 +1,4 @@
-.popup__close-icon{
+.popup__close-icon {
   display: block;
   position: absolute;
   top: -40px;
@@ -9,4 +9,13 @@
 }
 .popup__close-icon:hover{
   background-image: url(../../../images/images/Close\ Icon\ gray.svg);
+}
+@media screen and (max-width: 560px){
+  .popup__close-icon {
+    background-image: url(../../../images/images/Close\ Icon\ small.svg);
+    width: 20px;
+    height: 20px;
+    top: -36px;
+    right: 0px;
+  }
 }

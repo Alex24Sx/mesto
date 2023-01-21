@@ -21,6 +21,12 @@
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/__element/elements__element.css);
 @import url(../blocks/elements/__item/elements__item.css);
+@import url(../blocks/elements/__item/_place/elements__item_place_new-york.css);
+@import url(../blocks/elements/__item/_place/elements__item_place_washington.css);
+@import url(../blocks/elements/__item/_place/elements__item_place_calgary.css);
+@import url(../blocks/elements/__item/_place/elements__item_place_california.css);
+@import url(../blocks/elements/__item/_place/elements__item_place_monica.css);
+@import url(../blocks/elements/__item/_place/elements__item_place_vancover.css);
 @import url(../blocks/elements/__rectangle/elements__rectangle.css);
 @import url(../blocks/elements/__card-name/elements__card-name.css);
 @import url(../blocks/elements/__icon/elements__icon.css);

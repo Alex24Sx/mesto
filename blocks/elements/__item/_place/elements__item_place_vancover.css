@@ -1,0 +1,10 @@
+.elements__item_place_vancover {
+  background-image: url(../../../../images/images/berlin.jpg);
+  background-size: cover;
+  object-fit: contain;
+}
+@media screen and (max-width: 560px){
+  .elements__item_place_vancover {
+    background-image: url(../../../../images/images-small/berlin-tiny.jpg);
+  }
+}
