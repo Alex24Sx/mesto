@@ -8,9 +8,15 @@
   margin: 0 auto;
   padding: 45px 0 0 0;
 }
-/*@media screen and (max-width: 1280px){
+@media screen and (max-width: 1000px){
   .header {
-    max-width: 1184px;
+    max-width: 100%;
   }
-}*/
-
+}
+@media screen and (max-width: 560px){
+  .header {
+    padding: 0;
+    gap: 31.6px;
+    margin: 28px 0 0 0;
+  }
+}

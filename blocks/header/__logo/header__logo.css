@@ -7,3 +7,16 @@
   background-image: url(../../../images/images/Logo-black.svg);
   transition: 0.5ms;
 }
+@media screen and (max-width: 1000px){
+  .header__logo {
+    margin-left: 27px;
+  }
+}
+@media screen and (max-width: 560px){
+  .header__logo {
+    background-image: url(../../../images/images/Logo-small.svg);
+    width: 103.74px;
+    height: 24.24px;
+    /*background-size: contain;*/
+  }
+}

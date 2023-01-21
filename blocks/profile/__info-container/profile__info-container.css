@@ -5,3 +5,10 @@
   gap: 18px;
   align-items: center;
 }
+@media screen and (max-width: 560px){
+  .profile__info-container {
+    max-width: 282px;
+    display: block;
+    position: relative;
+  }
+}
