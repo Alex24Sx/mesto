@@ -25,8 +25,10 @@ function handleFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileDescription.textContent = jobInput.value;
-  nameInput.value = "";
-  jobInput.value = "";
   editPopup.classList.toggle('popup_opened');
 }
 formElement.addEventListener('submit', handleFormSubmit);
+  /*
+nameInput.value = "";
+jobInput.value = "";
+*/
