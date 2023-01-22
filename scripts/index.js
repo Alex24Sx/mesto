@@ -8,14 +8,15 @@ const jobInput = document.querySelector('.popup__input-text_type_discribe');
 const closeButton = document.querySelector('.popup__close');
 
 // Popup
+function add(evt) {
+  editPopup.classList.add('popup_opened');
+}
+editButton.addEventListener('click', add);
 
-editButton.addEventListener('click', (Event) => {
-  editPopup.classList.add('popup_opened')
-});
-
-closeButton.addEventListener('click', (Event) => {
-  editPopup.classList.remove('popup_opened')
-});
+function remove(evt) {
+  editPopup.classList.remove('popup_opened');
+}
+closeButton.addEventListener('click', remove);
 
 // Submit
 
@@ -26,8 +27,9 @@ function handleFormSubmit(evt) {
   editPopup.classList.toggle('.popup__close');
 }
 formElement.addEventListener('submit', handleFormSubmit);
-  /*
-evt.preventDefault();
+
+
+/*
 nameInput.value = "";
 jobInput.value = "";
 */

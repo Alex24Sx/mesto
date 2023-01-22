@@ -1,4 +1,4 @@
-.elements{
+.elements {
   display: grid;
   max-width: 880px;
   grid-template-columns: repeat(3, 1fr);
