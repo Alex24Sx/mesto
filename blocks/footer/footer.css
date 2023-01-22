@@ -7,20 +7,10 @@
   max-width: 880px;
   justify-content: space-between;
 }
-/*
-@media screen and (max-width: 768px){
-  .footer {
-    margin: 88px auto 0px auto;
-  }
-}
 @media screen and (max-width: 560px){
   .footer {
-  flex-direction: column;
-  align-items: flex-start;
+    padding-top: 48px;
+    padding-bottom: 36px;
   }
 }
-@media screen and (max-width: 320px){
-  .footer {
-    margin: 64px auto 0px auto;
-  }
-}*/
+
