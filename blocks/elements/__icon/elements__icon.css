@@ -1,4 +1,7 @@
 .elements__icon{
+  border: none;
+  font: inherit;
+  color: inherit;
   margin: 0;
   padding: 0;
   display: flex;

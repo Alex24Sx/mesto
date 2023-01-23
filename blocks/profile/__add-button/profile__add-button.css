@@ -1,7 +1,15 @@
-.profile__add-button{
+.profile__add-button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
   margin:  0 0 6.5px 0;
   padding: 0;
   background-image: url(../../../images/images/Add\ Button.svg);
+  background-size: cover;
   width: 150px;
   height: 50px;
 }

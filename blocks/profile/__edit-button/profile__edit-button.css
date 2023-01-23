@@ -1,9 +1,14 @@
 .profile__edit-button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
   margin: 6.5px 10px 0 0;
   padding: 0;
   display: flex;
   background-image: url(../../../images/images/Edit\ Button.svg);
   background-size: cover;
+  max-width: 24px;
   width: 24px;
   height: 24px;
   overflow: hidden;

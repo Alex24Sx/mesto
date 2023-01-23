@@ -13,10 +13,9 @@
 </head>
 
 <body class="body-background">
-  <div class="page root">
+  <div class="page">
     <header class="header">
       <a href="#" class="header__logo"></a>
-      <div class="header__line"></div>
     </header>
     <main class="content">
       <section class="profile">
@@ -24,55 +23,54 @@
         <div class="profile__info">
           <div class="profile__info-container">
             <h1 class="profile__name">Алексей Столповский</h1>
-            <a href="#" class="profile__edit-button"></a>
+            <button type="button" class="profile__edit-button"></button>
           </div>
           <p class="profile__discription">Покоритель Америки</p>
         </div>
-        <div class="profile__button-container">
-          <a href="#" class="profile__add-button"></a>
-        </div>
+        <button type="button" class="profile__add-button"></button>
       </section>
       <section class="elements">
         <div class="elements__element">
-          <div class="elements__item elements__item_place_washington"></div> <!--alt="Вашингтон"-->
+          <img class="elements__item elements__item_place_washington" alt="Вашингтон"
+            src="/images/images/Washington DC.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Вашингтон</h2>
-            <a href="#" class="elements__icon"></a>
+            <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <div class="elements__item elements__item_place_new-york"></div><!--alt="Нью Йорк"-->
+          <img class="elements__item" alt="Нью Йорк" src="/images/images/New York.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Нью Йорк</h2>
-            <a href="#" class="elements__icon"></a>
+            <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <div class="elements__item elements__item_place_vancover"></div><!-- alt="Ванкувер"-->
+          <img class="elements__item" alt="Ванкувер" src="/images/images/berlin.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Ванкувер провинция Британская Колумбия</h2>
-            <a href="#" class="elements__icon"></a>
+            <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <div class="elements__item elements__item_place_monica"></div><!-- alt="Санта Моника"-->
+          <img class="elements__item" alt="Санта Моника" src="/images/images/santa monica.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Санта Моника</h2>
-            <a href="#" class="elements__icon"></a>
+            <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <div class="elements__item elements__item_place_california"></div><!-- alt="Калифорния"-->
+          <img class="elements__item" alt="Калифорния" src="/images/images/california.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Калифорния</h2>
-            <a href="#" class="elements__icon"></a>
+            <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <div class="elements__item elements__item_place_calgary"></div><!-- alt="Калгари"-->
+          <img class="elements__item" alt="Калгари" src="/images/images/calgary.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Калгари</h2>
-            <a href="#" class="elements__icon"></a>
+            <button type="button" class="elements__icon"></button>
           </div>
         </div>
       </section>
@@ -80,19 +78,19 @@
     <footer class="footer">
       <p class="footer__copyright">&#169; 2022. Mesto USA</p>
     </footer>
-    <section class="popup popup_active">
+    <section class="popup">
       <div class="popup__container">
-        <form class="popup__card">
-          <p class="popup__title">Редактировать профиль</p>
-          <input type="text" placeholder="Имя" class="popup__input-text popup__input-text_type_name"
-            value="Алексей Столповский">
-          <input type="text" placeholder="О себе" class="popup__input-text popup__input-text_type_discribe"
-            value="Покоритель Америки">
-          <button type="submit" class="popup__button">
-            <i class="popup__button-text">Сохранить</i>
-          </button>
-          <a href="#" class="popup__close-icon popup__close"></a>
-        </form>
+        <div class="popup__card">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__card popup__form">
+            <input type="text" placeholder="Имя" name="Имя" class="popup__input-text popup__input-text_type_name"
+              value="Алексей Столповский">
+            <input type="text" placeholder="О себе" name="О себе"
+              class="popup__input-text popup__input-text_type_discribe" value="Покоритель Америки">
+          </form>
+          <button type="submit" class="popup__button">Сохранить</button>
+          <button type="reset" class="popup__close-icon"></button>
+        </div>
       </div>
     </section>
   </div>
