@@ -9,6 +9,7 @@
     content="HTML5, CSS, flex-box верстка, позиционирование, grid сетка, адаптивная верстка, Java Script">
   <meta name="author" content="Алексей Столповский">
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="/images/images/Logo-small.svg" type="flavicon">
   <title>mesto</title>
 </head>
 
@@ -31,43 +32,42 @@
       </section>
       <section class="elements">
         <div class="elements__element">
-          <img class="elements__item elements__item_place_washington" alt="Вашингтон"
-            src="/images/images/Washington DC.jpg">
+          <img class="elements__item" src="./images/images/Washington DC.jpg" alt="Вашингтон">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Вашингтон</h2>
             <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <img class="elements__item" alt="Нью Йорк" src="/images/images/New York.jpg">
+          <img class="elements__item" alt="Нью Йорк" src="./images/images/New York.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Нью Йорк</h2>
             <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <img class="elements__item" alt="Ванкувер" src="/images/images/berlin.jpg">
+          <img class="elements__item" alt="Ванкувер" src="./images/images/berlin.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Ванкувер провинция Британская Колумбия</h2>
             <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <img class="elements__item" alt="Санта Моника" src="/images/images/santa monica.jpg">
+          <img class="elements__item" alt="Санта Моника" src="./images/images/santa monica.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Санта Моника</h2>
             <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <img class="elements__item" alt="Калифорния" src="/images/images/california.jpg">
+          <img class="elements__item" alt="Калифорния" src="./images/images/california.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Калифорния</h2>
             <button type="button" class="elements__icon"></button>
           </div>
         </div>
         <div class="elements__element">
-          <img class="elements__item" alt="Калгари" src="/images/images/calgary.jpg">
+          <img class="elements__item" alt="Калгари" src="./images/images/calgary.jpg">
           <div class="elements__rectangle">
             <h2 class="elements__card-name">Калгари</h2>
             <button type="button" class="elements__icon"></button>
@@ -82,13 +82,14 @@
       <div class="popup__container">
         <div class="popup__card">
           <h2 class="popup__title">Редактировать профиль</h2>
-          <form class="popup__card popup__form">
-            <input type="text" placeholder="Имя" name="Имя" class="popup__input-text popup__input-text_type_name"
+          <form class="popup__form">
+            <input type="text" placeholder="Имя" name="Nik" class="popup__input-text popup__input-text_type_name"
               value="Алексей Столповский">
-            <input type="text" placeholder="О себе" name="О себе"
+            <input type="text" placeholder="О себе" name="description"
               class="popup__input-text popup__input-text_type_discribe" value="Покоритель Америки">
+            <button type="submit" class="popup__button">Сохранить</button>
           </form>
-          <button type="submit" class="popup__button">Сохранить</button>
+          <!--кнопка не работает если ее вынести за пределы формы-->
           <button type="reset" class="popup__close-icon"></button>
         </div>
       </div>
