@@ -10,6 +10,8 @@ const closeButton = document.querySelector('.popup__close-icon');
 // Popup
 function add() {
   editPopup.classList.add('popup_opened');
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileDescription.textContent;
 }
 editButton.addEventListener('click', add);
 
