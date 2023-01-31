@@ -11,3 +11,8 @@
   position: relative;
   z-index: 25;
 }
+@media screen and (max-width: 560px){
+  .popup__container {
+    width: 282px;
+  }
+}
