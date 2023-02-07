@@ -6,6 +6,7 @@
   border-radius: 10px 10px 0px 0px;
   border: 1px solid rgb(52, 165, 76);
   background-size: cover;
+  cursor: pointer;
 }
 /*
 @media screen and (max-width: 1024px){
