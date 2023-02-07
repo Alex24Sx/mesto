@@ -13,8 +13,9 @@ const editPopupadd = document.querySelector('.popup_place_add');
 const addButton = document.querySelector('.profile__add-button');
 const closeaddButton = document.querySelector('.popup__close-icon-add');
 const formaddElement = document.querySelector('.popup__form_place_add');
-
-
+// Third popup const
+const editPopupimage = document.querySelector('.popup_place_image');
+const popupImage = document.querySelector('.popup__image');
 // Popups
 // open----------------
 function popupEdit() {
@@ -28,6 +29,10 @@ function popupAdd() {
   editPopupadd.classList.add('popup_opened');
 }
 addButton.addEventListener('click', popupAdd);
+
+function popupOpenimage() {
+  editPopupimage.classList.add('popup_opened');
+}
 
 // close--------------------
 
@@ -91,8 +96,15 @@ function createCard(item) {
   const card = cardTemplate.cloneNode(true);
   const cardText = card.querySelector('.elements__card-name');
   const cardImg = card.querySelector('.elements__item');
+  const cardRemove = card.querySelector('.elements__delete-icon');
   cardImg.setAttribute('src', item.link);
   cardText.textContent = item.name;
+  cardRemove.addEventListener('click', () => {
+    card.remove();
+  });
+  cardImage.addEventListener('click', () => {
+    popupOpenimage();
+  });
   return card;
 }
 function renderCards() {
