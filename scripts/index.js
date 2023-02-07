@@ -148,6 +148,6 @@ function submitAddform(evt) {
 };
 formaddElement.addEventListener('submit', submitAddform);
 
-// Delete cards
+
 
 

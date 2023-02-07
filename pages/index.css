@@ -20,8 +20,8 @@
 @import url(../blocks/elements/__item/elements__item.css);
 @import url(../blocks/elements/__rectangle/elements__rectangle.css);
 @import url(../blocks/elements/__card-name/elements__card-name.css);
-@import url(../blocks/elements/__icon/_active/elements__icon_active.css);
 @import url(../blocks/elements/__icon/elements__icon.css);
+@import url(../blocks/elements/__icon/_active/elements__icon_active.css);
 @import url(../blocks/elements/__delete-icon/elements__delete-icon.css);
 /*------------------footer-------------*/
 @import url(../blocks/footer/footer.css);
