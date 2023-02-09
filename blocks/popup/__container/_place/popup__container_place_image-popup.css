@@ -1,17 +1,16 @@
-.popup__image {
+.popup__container_place_image-popup {
+  display: block;
+  margin: auto;
   width: 816px;
   height: 540px;
-  background-size: cover;
-
 }
 @media screen and (max-width: 1000px){
-  .popup__image {
+  .popup__container_place_image-popup {
     width: 433px;
-    object-fit: cover;
   }
 }
 @media screen and (max-width: 650px){
-  .popup__image {
+  .popup__container_place_image-popup {
     width: 282px;
     height: 299px;
   }

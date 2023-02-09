@@ -33,7 +33,6 @@ function popupAdd() {
 addButton.addEventListener('click', popupAdd);
 
 function popupOpenimage(item) {
-  console.log(item, 'item');
   popupImage.setAttribute('src', item.link);
   popupDes.textContent = item.name;
   editPopupimage.classList.add('popup_opened');
@@ -66,7 +65,7 @@ function handleFormSubmit(evt) {
 }
 formElement.addEventListener('submit', handleFormSubmit);
 ///Add cards elements
-
+// First six cards massive
 const initialCards = [
   {
     name: 'Архыз',

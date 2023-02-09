@@ -1,4 +1,7 @@
 .popup__description {
-  color: black;
-  font-size: 44px;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 }

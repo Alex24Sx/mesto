@@ -1,4 +1,4 @@
-.elements__delete-icon{
+.elements__delete-icon {
   position: absolute;
   border: none;
   font: inherit;
@@ -15,7 +15,7 @@
 
 }
 .elements__delete-icon:hover{
-  background-image: url(../../../images/images/Trash.svg);
+  background-image: url(../../../images/images/Trashhover.svg);
   transition: 0.5ms;
 }
 
