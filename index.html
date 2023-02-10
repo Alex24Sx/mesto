@@ -31,16 +31,6 @@
         <button type="button" class="profile__add-button"></button>
       </section>
       <section class="elements">
-        <template class="elements__element-template">
-          <div class="elements__element">
-            <img class="elements__item" src="./images/images/calgary.jpg" alt="Ссылка отсутствует">
-            <button type="delete" class="elements__delete-icon"></button>
-            <div class="elements__rectangle">
-              <h2 class="elements__card-name"></h2>
-              <button type="button" class="elements__icon"></button>
-            </div>
-          </div>
-        </template>
         <!--
         <div class="elements__element">
           <img class="elements__item" src="./images/images/Washington DC.jpg" alt="Вашингтон">
@@ -89,7 +79,7 @@
     <footer class="footer">
       <p class="footer__copyright">&#169; 2022. Mesto USA</p>
     </footer>
-    <section class="popup">
+    <section class="popup popup_place_profile">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" method="get" name="submit-form">
@@ -102,7 +92,7 @@
       </div>
     </section>
 
-    <section class="popup popup_place_add">
+    <div class="popup popup_place_add">
       <div class="popup__container">
         <h2 class="popup__title">Новое место</h2>
         <form class="popup__form popup__form_place_add" method="get" name="add-form">
@@ -113,15 +103,26 @@
         </form>
         <button type="reset" class="popup__close-icon popup__close-icon-add"></button>
       </div>
-    </section>
-    <section class="popup popup_place_image">
+    </div>
+    <div class="popup popup_place_image">
       <div class="popup__container popup__container_place_image-popup">
         <img class="popup__image" src="./images/images/california.jpg" alt="Вставьте ссылку на изображение">
         <div class="popup__description"></div>
         <button type="reset" class="popup__close-icon popup__close-icon-image"></button>
       </div>
-    </section>
+    </div>
+    <template class="elements__element-template">
+      <div class="elements__element">
+        <img class="elements__item" src="./images/images/calgary.jpg" alt="Ссылка отсутствует">
+        <button type="delete" class="elements__delete-icon"></button>
+        <div class="elements__rectangle">
+          <h2 class="elements__card-name"></h2>
+          <button type="button" class="elements__icon"></button>
+        </div>
+      </div>
+    </template>
   </div>
+
   <script src="scripts/index.js"></script>
 </body>
 
