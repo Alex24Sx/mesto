@@ -16,3 +16,23 @@
 }
 input {outline:none;}
 button { cursor: pointer;}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #C4C4C4;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #C4C4C4;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #C4C4C4;
+}
