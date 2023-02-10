@@ -3,6 +3,7 @@
   height: 540px;
   background-size: cover;
   object-fit: cover;
+  color: #000;
 }
 @media screen and (max-width: 1000px){
   .popup__image {

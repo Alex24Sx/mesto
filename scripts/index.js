@@ -19,39 +19,54 @@ const popupImage = document.querySelector('.popup__image');
 const popupDes = document.querySelector('.popup__description');
 const closeimgButton = document.querySelector('.popup__close-icon-image');
 // Popups
-// open----------------
+// open--common------------
+function openPopup(popup) {
+  popup.classList.add('popup_opened');
+}
+// close--common--------------
+function closePopup(popup) {
+  popup.classList.remove('popup_opened');
+}
+// open--private--------------
 function popupEdit() {
-  editPopup.classList.add('popup_opened');
+  openPopup(editPopup);
+  //editPopup.classList.add('popup_opened');
   nameInput.value = profileName.textContent;
   jobInput.value = profileDescription.textContent;
 }
 editButton.addEventListener('click', popupEdit);
 
 function popupAdd() {
-  editPopupadd.classList.add('popup_opened');
+  openPopup(editPopupadd);
+  //editPopupadd.classList.add('popup_opened');
 }
 addButton.addEventListener('click', popupAdd);
 
 function popupOpenimage(item) {
   popupImage.setAttribute('src', item.link);
+  popupImage.setAttribute('alt', item.name);
   popupDes.textContent = item.name;
-  editPopupimage.classList.add('popup_opened');
+  openPopup(editPopupimage);
+  //editPopupimage.classList.add('popup_opened');
 }
 
-// close--------------------
+// close---private-----------------
 
 function removeEdit() {
-  editPopup.classList.remove('popup_opened');
+  closePopup(editPopup);
+  //editPopup.classList.remove('popup_opened');
 }
 closeButton.addEventListener('click', removeEdit);
 
 function removeAdd() {
-  editPopupadd.classList.remove('popup_opened');
+  closePopup(editPopupadd);
+  //editPopupadd.classList.remove('popup_opened');
 }
 closeaddButton.addEventListener('click', removeAdd);
 
 function removeImage() {
-  editPopupimage.classList.remove('popup_opened');
+  closePopup(editPopupimage);
+  //editPopupimage.classList.remove('popup_opened');
 }
 closeimgButton.addEventListener('click', removeImage);
 
@@ -108,6 +123,7 @@ function createCard(item) {
   const cardRemove = card.querySelector('.elements__delete-icon');
   const cardLike = card.querySelector('.elements__icon');
   cardImg.setAttribute('src', item.link);
+  cardImg.setAttribute('alt', item.name);
   cardText.textContent = item.name;
   cardRemove.addEventListener('click', () => {
     card.remove();
