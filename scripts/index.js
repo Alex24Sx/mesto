@@ -70,15 +70,15 @@ function removeImage() {
 }
 closeimgButton.addEventListener('click', removeImage);
 
-const editPopupOverlays = () => {
-  const editPopupOverlay = document.querySelectorAll('.popup');
-  editPopupOverlay.forEach(closeOverlay)
-}
-editPopupOverlays.addEventListener('click', () => {
-  removeEdit();
-  removeAdd();
-  removeImage();
-});
+//const editPopupOverlays = () => {
+//  const editPopupOverlay = document.querySelectorAll('.popup');
+// editPopupOverlay.forEach(closeOverlay)
+//}
+//editPopupOverlays.addEventListener('click', () => {
+//removeEdit();
+//removeAdd();
+//removeImage();
+//});
 // Submit for profile
 
 function handleFormSubmit(evt) {
