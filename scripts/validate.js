@@ -1,4 +1,59 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function keyHandler(evt) {
   if (evt.key === 'Enter') {
     addSong(artistInput.value, titleInput.value)
@@ -107,3 +162,4 @@ const toggleButtonState = (inputList, buttonElement) => {
   }
 }
 enableValidation();
+*/
