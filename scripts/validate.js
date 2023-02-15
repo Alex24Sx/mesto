@@ -1,24 +1,25 @@
+//Validate methods
 const validates = {
-  required(val) {
-    if (!val) {
+  required(value) {
+    if (!value) {
       return "Поле обязательно для заполнения"
     }
     return "";
   },
-  minLength(val, number) {
-    if (val && val.length < number) {
+  minLength(value, number) {
+    if (value && value.length < number) {
       return `Введено менее ${number} символов`
     }
     return "";
   },
-  maxLength(val, number) {
-    if (val && val.length > number) {
+  maxLength(value, number) {
+    if (value && value.length > number) {
       return `Введено более ${number} символов`
     }
     return "";
   }
 }
-
+//Entering inputs
 const editValidate = [{
   name: "name",
   check: [
@@ -57,7 +58,47 @@ const editValidate = [{
     }
   ]
 }];
+//test
+// const placeValidate = [{
+//   name: "name",
+//   check: [
+//     {
+//       name: "required",
+//       function: validates.required
+//     },
+//     {
+//       name: "minLength",
+//       function: validates.minLength,
+//       val: 2
+//     },
+//     {
+//       name: "maxLength",
+//       function: validates.maxLength,
+//       val: 40
+//     }
+//   ]
+// },
+// {
+//   name: "description",
+//   check: [
+//     {
+//       name: "required",
+//       function: validates.required
+//     },
+//     {
+//       name: "minLength",
+//       function: validates.minLength,
+//       val: 2
+//     },
+//     {
+//       name: "maxLength",
+//       function: validates.maxLength,
+//       val: 40
+//     }
+//   ]
+// }];
 
+//Has invalide
 function hasInvalidInput(value, check) {
   let i = 0;
   let message = "";
@@ -71,13 +112,14 @@ function hasInvalidInput(value, check) {
   return message;
 }
 
+//Check invalide
 function checkInvalidInputs(settings) {
   const form = document.querySelector(settings.id);
   const errorClass = form.querySelectorAll("." + settings.errorClass);
   const errorClassHidden = form.querySelectorAll("." + settings.errorClassHidden);
   return !!(errorClass.length || errorClassHidden.length);
 }
-
+//setEventListeners
 function setEventListeners(input, validate, settings) {
   const form = document.querySelector(settings.id);
   const parent = input.closest(settings.parentBlock);
@@ -105,6 +147,7 @@ function setEventListeners(input, validate, settings) {
   });
 }
 
+//enableValidation
 function enableValidation(settings) {
   const form = document.querySelector(settings.id);
   form.addEventListener("submit", (e) => {
@@ -127,7 +170,7 @@ function enableValidation(settings) {
     }
   });
 }
-
+//enableValidation - entering settings
 enableValidation({
   id: "#edit-from",
   validate: editValidate,
@@ -138,4 +181,15 @@ enableValidation({
   submitButton: ".popup__button"
 });
 
-console.log('asfasf')
+
+// enableValidation({
+//   id: "#place-form",
+//   validate: placeValidate,
+//   errorClass: "has-error",
+//   errorClassHidden: "has-error-hidden",
+//   parentBlock: ".popup__input",
+//   messageBlock: ".popup__input_type_error",
+//   submitButton: ".popup__button"
+// });
+
+
