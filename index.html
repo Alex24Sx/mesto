@@ -82,10 +82,16 @@
     <section class="popup popup_place_profile">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" method="get" name="submit-form">
-          <input type="text" placeholder="Имя" name="Nik" class="popup__input-text popup__input-text_type_name">
-          <input type="text" placeholder="О себе" name="description"
-            class="popup__input-text popup__input-text_type_discribe">
+        <form class="popup__form" method="get" name="submit-form" id="edit-form">
+          <div class="popup__input">
+            <input type="text" placeholder="Имя" name="Nik" class="popup__input-text popup__input-text_type_name">
+          </div>
+          <div class="popup__input_type_error">Вы пропустили это поле</div>
+          <div class="popup__input">
+            <input type="text" placeholder="О себе" name="description"
+              class="popup__input-text popup__input-text_type_discribe">
+          </div>
+          <div class="popup__input_type_error">Вы пропустили это поле</div>
           <button type="submit" class="popup__button">Сохранить</button>
         </form>
         <button type="reset" class="popup__close-icon"></button>
