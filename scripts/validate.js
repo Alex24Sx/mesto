@@ -137,3 +137,5 @@ enableValidation({
   messageBlock: ".popup__input_type_error",
   submitButton: ".popup__button"
 });
+
+console.log('asfasf')

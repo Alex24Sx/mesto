@@ -31,9 +31,10 @@ function closePopup(popup) {
 function popupEdit() {
   openPopup(editPopup);
   //editPopup.classList.add('popup_opened');
-  nameInput.value = profileName.textContent;
-  jobInput.value = profileDescription.textContent;
 }
+nameInput.value = profileName.textContent;
+jobInput.value = profileDescription.textContent;
+
 editButton.addEventListener('click', popupEdit);
 
 function popupAdd() {
@@ -51,6 +52,7 @@ function popupOpenimage(item) {
 }
 
 // close---private-----------------
+
 
 function removeEdit() {
   closePopup(editPopup);
@@ -70,15 +72,6 @@ function removeImage() {
 }
 closeimgButton.addEventListener('click', removeImage);
 
-//const editPopupOverlays = () => {
-//  const editPopupOverlay = document.querySelectorAll('.popup');
-// editPopupOverlay.forEach(closeOverlay)
-//}
-//editPopupOverlays.addEventListener('click', () => {
-//removeEdit();
-//removeAdd();
-//removeImage();
-//});
 // Submit for profile
 
 function handleFormSubmit(evt) {
