@@ -1,25 +1,33 @@
-//Validate methods
+//Validate conditions
 const validates = {
   required(value) {
     if (!value) {
-      return "Поле обязательно для заполнения"
+      return "Вы пропустили это поле"
     }
     return "";
   },
   minLength(value, number) {
     if (value && value.length < number) {
-      return `Введено менее ${number} символов`
+      return `Минимальное количество символов: 2. Длина текста сейчас ${number - 1} символ`
     }
     return "";
   },
   maxLength(value, number) {
     if (value && value.length > number) {
-      return `Введено более ${number} символов`
+      return `Максимальное количество символов: ${number} . Длина текста сейчас ${value.length} символов`
+    }
+    return "";
+  },
+  URL(value) {
+    if (value === URL) {
+      return "Не ссылка"
     }
     return "";
   }
 }
-//Entering inputs
+// Проверка на URL
+//Entering inputs massive
+//Edit form
 const editValidate = [{
   name: "name",
   check: [
@@ -54,49 +62,43 @@ const editValidate = [{
     {
       name: "maxLength",
       function: validates.maxLength,
-      val: 40
+      val: 200
     }
   ]
 }];
-//test
-// const placeValidate = [{
-//   name: "name",
-//   check: [
-//     {
-//       name: "required",
-//       function: validates.required
-//     },
-//     {
-//       name: "minLength",
-//       function: validates.minLength,
-//       val: 2
-//     },
-//     {
-//       name: "maxLength",
-//       function: validates.maxLength,
-//       val: 40
-//     }
-//   ]
-// },
-// {
-//   name: "description",
-//   check: [
-//     {
-//       name: "required",
-//       function: validates.required
-//     },
-//     {
-//       name: "minLength",
-//       function: validates.minLength,
-//       val: 2
-//     },
-//     {
-//       name: "maxLength",
-//       function: validates.maxLength,
-//       val: 40
-//     }
-//   ]
-// }];
+//Add Place form
+const placeValidate = [{
+  name: "place",
+  check: [
+    {
+      name: "required",
+      function: validates.required
+    },
+    {
+      name: "minLength",
+      function: validates.minLength,
+      val: 2
+    },
+    {
+      name: "maxLength",
+      function: validates.maxLength,
+      val: 30
+    }
+  ]
+},
+{
+  name: "image-link",
+  check: [
+    {
+      name: "required",
+      function: validates.required
+    },
+    {
+      name: "URL",
+      function: validates.URL
+    }
+  ]
+}];
 
 //Has invalide
 function hasInvalidInput(value, check) {
@@ -125,8 +127,8 @@ function setEventListeners(input, validate, settings) {
   const parent = input.closest(settings.parentBlock);
   const messageBlock = parent.querySelector(settings.messageBlock);
   const submitButton = form.querySelector(settings.submitButton);
-  input.addEventListener("input", (e) => {
-    const hasInvalid = hasInvalidInput(e.target.value, validate.check);
+  input.addEventListener("input", (evt) => {
+    const hasInvalid = hasInvalidInput(evt.target.value, validate.check);
     if (hasInvalid) {
       parent.classList.add(settings.errorClass);
       input.classList.add(settings.errorClass);
@@ -150,14 +152,15 @@ function setEventListeners(input, validate, settings) {
 //enableValidation
 function enableValidation(settings) {
   const form = document.querySelector(settings.id);
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  form.addEventListener("submit", (evt) => {
+    evt.preventDefault();
   });
   const submitButton = form.querySelector(settings.submitButton);
   const inputList = Array.from(form.querySelectorAll("input"));
   inputList.forEach((input) => {
     const name = input.getAttribute("name");
     const inputValidate = settings.validate.find(v => v.name == name);
+    //выше вместо map применил find
     const parent = input.closest(settings.parentBlock);
     if (inputValidate) {
       setEventListeners(input, inputValidate, settings);
@@ -171,8 +174,9 @@ function enableValidation(settings) {
   });
 }
 //enableValidation - entering settings
+// Edit form
 enableValidation({
-  id: "#edit-from",
+  id: "#edit-form",
   validate: editValidate,
   errorClass: "has-error",
   errorClassHidden: "has-error-hidden",
@@ -181,15 +185,15 @@ enableValidation({
   submitButton: ".popup__button"
 });
 
-
-// enableValidation({
-//   id: "#place-form",
-//   validate: placeValidate,
-//   errorClass: "has-error",
-//   errorClassHidden: "has-error-hidden",
-//   parentBlock: ".popup__input",
-//   messageBlock: ".popup__input_type_error",
-//   submitButton: ".popup__button"
-// });
+// Add Place form
+enableValidation({
+  id: "#place-form",
+  validate: placeValidate,
+  errorClass: "has-error",
+  errorClassHidden: "has-error-hidden",
+  parentBlock: ".popup__input",
+  messageBlock: ".popup__input_type_error",
+  submitButton: ".popup__button"
+});
 
 

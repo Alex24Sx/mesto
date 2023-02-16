@@ -52,8 +52,6 @@ function popupOpenimage(item) {
 }
 
 // close---private-----------------
-
-
 function removeEdit() {
   closePopup(editPopup);
   //editPopup.classList.remove('popup_opened');
