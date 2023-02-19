@@ -19,10 +19,11 @@ const validates = {
     return "";
   },
   URL(value) {
-    if (value === URL) {
-      return "Не ссылка"
+    const str = "http"
+    if (new RegExp(str).test(value)) {
+      return ""
     }
-    return "";
+    return "Не ссылка";
   }
 }
 // Проверка на URL
