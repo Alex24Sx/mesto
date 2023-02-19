@@ -4,12 +4,13 @@
   justify-content: flex-start;
   margin: auto;
   width: 430px;
-  height: 330px;
+  min-height: 294px;
   background: #FFFFFF;
   border-radius: 10px;
   opacity: 1;
   position: relative;
   z-index: 25;
+  padding: 0 0 36px 0;
 }
 @media screen and (max-width: 560px){
   .popup__container {

@@ -36,3 +36,8 @@ input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #C4C4C4;
 }
+/*form {
+  display: inline-block;
+  max-height: 268px;
+}
+*/
