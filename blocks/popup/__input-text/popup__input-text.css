@@ -1,24 +1,8 @@
 .popup__input-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  margin: 0px 36px 0px 36px;
-  width: 358px;
+  margin: 0;
+  padding: 0 0 10px 0;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0;
 }
 
-@media screen and (max-width: 560px){
-  .popup__input-text {
-    text-align: left;
-    width: 238px;
-  }
-}
-.popup__input-text:invalid {
-  border-bottom: 1px solid #FF0000;
-}
 /* Вы пропустили это поле.
 /* Введите адрес сайта.

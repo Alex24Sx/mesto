@@ -11,7 +11,7 @@
   border-radius: 2px;
   text-decoration: none;
   padding: 0;
-  margin: 47px 36px 37px 36px;
+  margin: 47px auto 0 auto;
   appearance: none;
   font-style: normal;
   font-weight: 400;
@@ -24,14 +24,15 @@
   opacity: 0.8;
 }
 .popup__button:disabled {
-  background: #961414;
-  opacity: 0.8;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 560px){
   .popup__button {
     max-width: 238px;
     height: 46px;
-    margin: 43px 22px 0px 22px;
+    margin: 43px auto 0px auto;
     font-size: 14px;
     line-height: 17px;
   }

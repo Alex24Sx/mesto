@@ -132,12 +132,14 @@ function setEventListeners(input, validate, settings) {
     if (hasInvalid) {
       parent.classList.add(settings.errorClass);
       input.classList.add(settings.errorClass);
+      messageBlock.classList.add('popup__input-error_active')
       messageBlock.textContent = hasInvalid;
     } else {
       parent.classList.remove(settings.errorClass);
       parent.classList.remove(settings.errorClassHidden);
       input.classList.remove(settings.errorClass);
       input.classList.remove(settings.errorClassHidden);
+      messageBlock.classList.remove('popup__input-error_active')
       messageBlock.textContent = hasInvalid;
     }
     const check = checkInvalidInputs(settings);
