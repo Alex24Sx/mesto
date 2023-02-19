@@ -23,10 +23,9 @@ const validates = {
     if (new RegExp(str).test(value)) {
       return ""
     }
-    return "Не ссылка";
+    return "Введите адрес сайта";
   }
 }
-// Проверка на URL
 //Entering inputs massive
 //Edit form
 const editValidate = [{
@@ -174,6 +173,7 @@ function enableValidation(settings) {
     }
   });
 }
+
 //enableValidation - entering settings
 // Edit form
 enableValidation({
@@ -182,7 +182,7 @@ enableValidation({
   errorClass: "has-error",
   errorClassHidden: "has-error-hidden",
   parentBlock: ".popup__input",
-  messageBlock: ".popup__input_type_error",
+  messageBlock: ".popup__input-error",
   submitButton: ".popup__button"
 });
 
@@ -193,7 +193,7 @@ enableValidation({
   errorClass: "has-error",
   errorClassHidden: "has-error-hidden",
   parentBlock: ".popup__input",
-  messageBlock: ".popup__input_type_error",
+  messageBlock: ".popup__input-error",
   submitButton: ".popup__button"
 });
 
